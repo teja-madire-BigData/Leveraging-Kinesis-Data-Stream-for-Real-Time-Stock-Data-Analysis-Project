@@ -90,6 +90,46 @@ https://github.com/teja-madire-BigData/Leveraging-Kinesis-Data-Stream-for-Real-T
     -Execute the queries and visualize or export the results as needed.
 
 This updated process outlines the steps to create a Kinesis Data Stream, S3 bucket, producer and consumer Lambda functions, a crawler in Glue, and use Athena for data analysis. Make sure to configure the permissions and settings according to your specific requirements and adjust the code in the Lambda functions accordingly.
+
+
+## Here are a few basic queries you can use in Athena to analyze the stock market data you provided:
+
+1)Calculate the average closing price for each index:
+
+SELECT Index, AVG(Close) AS AverageClosingPrice
+FROM your_table
+GROUP BY Index
+
+2)Find the highest and lowest closing prices for a specific index:
+
+SELECT Index, MAX(Close) AS HighestClosingPrice, MIN(Close) AS LowestClosingPrice
+FROM your_table
+WHERE Index = 'HSI'
+GROUP BY Index
+
+3)Determine the trading volume for a specific date range:
+
+SELECT Date, SUM(Volume) AS TotalVolume
+FROM your_table
+WHERE Date BETWEEN '1987-01-01' AND '1987-01-31'
+GROUP BY Date
+ORDER BY Date
+
+4)Calculate the average trading volume by an index for a specific date range:
+
+SELECT Index, AVG(Volume) AS AverageVolume
+FROM your_table
+WHERE Date BETWEEN '1987-01-01' AND '1987-01-31'
+GROUP BY Index
+
+5)Find the top 5 dates with the highest trading volume:
+
+SELECT Date, SUM(Volume) AS TotalVolume
+FROM your_table
+GROUP BY Date
+ORDER BY TotalVolume DESC
+LIMIT 5
+
     
     
 
