@@ -1,6 +1,6 @@
 # Leveraging-Kinesis-Data-Stream-for-Real-Time-Stock-Data-Analysis-Project
 
-##Introduction
+## Introduction
 
 In this project, I executed an End-To-End Data Engineering Project on Real-Time Stock Market Data using Kinesis Data Stream.
 
@@ -21,3 +21,5 @@ I have used different technologies such as Python, Amazon Web Services (AWS), Ki
 6. Lambda
    
 ## Dataset Used
+
+https://github.com/teja-madire-BigData/Leveraging-Kinesis-Data-Stream-for-Real-Time-Stock-Data-Analysis-Project/blob/main/Stock_market_Data.csv
