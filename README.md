@@ -23,3 +23,18 @@ I have used different technologies such as Python, Amazon Web Services (AWS), Ki
 ## Dataset Used
 
 https://github.com/teja-madire-BigData/Leveraging-Kinesis-Data-Stream-for-Real-Time-Stock-Data-Analysis-Project/blob/main/Stock_market_Data.csv
+
+
+## Steps to build the project
+
+## 1)Create a Kinesis Data Stream:
+
+    -Go to the AWS Management Console and navigate to the Kinesis service.
+    -Click on "Create data stream" and provide a name for your stream (e.g., "stock_market_streaming_realtime").
+    -Configure the desired number of shards for your stream.
+    -Click on "Create data stream" to create the stream.
+
+
+## 2)Create an S3 Bucket:
+
+      
