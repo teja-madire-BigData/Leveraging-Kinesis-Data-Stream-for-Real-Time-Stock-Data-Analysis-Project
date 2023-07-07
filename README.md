@@ -4,10 +4,10 @@
 
 In this project, I executed an End-To-End Data Engineering Project on Real-Time Stock Market Data using Kinesis Data Stream.
 
-I have used different technologies such as Python, Amazon Web Services (AWS), Kinesis Data Stream,Lambda, Glue, Athena, and SQL
+I have used different technologies such as Python, Amazon Web Services (AWS), Kinesis Data Stream, Lambda, Glue, Athena, and SQL
 
 ## Architecture 
-<img src="Architecture.jpg">
+<img src="Architecture.jpeg">
 
 ## Technology Used
 - Programming Language - Python
